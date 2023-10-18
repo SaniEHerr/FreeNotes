@@ -60,7 +60,7 @@ const UserItem = () => {
               <p className="text-xs font-medium leading-none text-muted-foreground">
                 {user?.emailAddresses[0].emailAddress}
               </p>
-            </div>
+            </div> 
           </div>
         </div>
         <DropdownMenuSeparator  />

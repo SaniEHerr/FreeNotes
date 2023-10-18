@@ -12,7 +12,7 @@ const DocumentPage = () => {
   return (
     <div className='h-full flex flex-col items-center justify-center space-y-4'>
       <Image 
-        src="/empty.png"
+        src="/empty.png" 
         alt="Empty"
         width="300"
         height="300"
