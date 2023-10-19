@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { ChevronsLeft, MenuIcon, PlusCircle, Search, Settings } from "lucide-react"
+import { ChevronsLeft, MenuIcon, Plus, PlusCircle, Search, Settings } from "lucide-react"
 import { usePathname } from "next/navigation"
 import { ElementRef, useEffect, useRef, useState } from "react"
 import { useMediaQuery } from "usehooks-ts"
@@ -133,7 +133,7 @@ const Navigation = () => {
           <ChevronsLeft className="h-6 w-6" />
         </div>
         {/* <div className="flex flex-col gap-1"> */}
-        <div>
+        <div className="cursor-pointer">
           <UserItem />
           <Item 
             label="Search"
@@ -154,6 +154,13 @@ const Navigation = () => {
         </div>
         <div className="mt-4">
           <DocumentList />
+          <div className="mt-2">
+            <Item 
+              onClick={handleCreate}
+              icon={Plus}
+              label="Add a pge"
+            />
+          </div>
         </div>
         <div 
           onMouseDown={handleMouseDown}
