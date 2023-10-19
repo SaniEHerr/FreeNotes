@@ -12,6 +12,7 @@ import Item from "./Item"
 import { toast } from "sonner"
 import DocumentList from "./DocumentList"
 import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover"
+import TrashBox from "./TrashBox"
 
 const Navigation = () => {
 
@@ -162,7 +163,7 @@ const Navigation = () => {
               label="Add a pge"
             />
             <Popover>
-              <PopoverTrigger className="w-full mt-4 ">
+              <PopoverTrigger className="w-full mt-0">
                 <Item 
                   label="Trash"
                   icon={Trash}
@@ -172,7 +173,7 @@ const Navigation = () => {
                 side={isMobile ? "bottom" : "right"}
                 className="p-0 w-72"  
               >
-                <p>Trash Box</p>
+                <TrashBox />
               </PopoverContent>
             </Popover>
           </div>
