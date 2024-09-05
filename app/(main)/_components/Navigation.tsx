@@ -134,7 +134,7 @@ const Navigation = () => {
         )}
       >
         <div 
-        onClick={collapse}
+          onClick={collapse}
           role="button" 
           className={cn(
             "h-6 w-6 text-muted-foreground rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600 absolute top-3 right-2 opacity-0 group-hover/sidebar:opacity-100 transition",
